@@ -1,0 +1,128 @@
+.console-color-black-fg {
+  color: #000000;
+}
+.console-color-black-fg.bright-fg {
+  color: #555555;
+}
+.console-color-black-bg {
+  background-color: #000000;
+}
+.console-color-black-bg.bright-bg {
+  background-color: #555555;
+}
+.console-color-red-fg {
+  color: #bb0000;
+}
+.console-color-red-fg.bright-fg {
+  color: #ff5555;
+}
+.console-color-red-bg {
+  background-color: #bb0000;
+}
+.console-color-red-bg.bright-bg {
+  background-color: #ff5555;
+}
+.console-color-green-fg {
+  color: #00bb00;
+}
+.console-color-green-fg.bright-fg {
+  color: #55ff55;
+}
+.console-color-green-bg {
+  background-color: #00bb00;
+}
+.console-color-green-bg.bright-bg {
+  background-color: #55ff55;
+}
+.console-color-yellow-fg {
+  color: #bbbb00;
+}
+.console-color-yellow-fg.bright-fg {
+  color: #ffff55;
+}
+.console-color-yellow-bg {
+  background-color: #bbbb00;
+}
+.console-color-yellow-bg.bright-bg {
+  background-color: #ffff55;
+}
+.console-color-blue-fg {
+  color: #0000bb;
+}
+.console-color-blue-fg.bright-fg {
+  color: #5555ff;
+}
+.console-color-blue-bg {
+  background-color: #0000bb;
+}
+.console-color-blue-bg.bright-bg {
+  background-color: #5555ff;
+}
+.console-color-magenta-fg {
+  color: #bb00bb;
+}
+.console-color-magenta-fg.bright-fg {
+  color: #ff55ff;
+}
+.console-color-magenta-bg {
+  background-color: #bb00bb;
+}
+.console-color-magenta-bg.bright-bg {
+  background-color: #ff55ff;
+}
+.console-color-cyan-fg {
+  color: #00bbbb;
+}
+.console-color-cyan-fg.bright-fg {
+  color: #55ffff;
+}
+.console-color-cyan-bg {
+  background-color: #00bbbb;
+}
+.console-color-cyan-bg.bright-bg {
+  background-color: #55ffff;
+}
+.console-color-white-fg {
+  color: #bbbbbb;
+}
+.console-color-white-fg.bright-fg {
+  color: #ffffff;
+}
+.console-color-white-bg {
+  background-color: #bbbbbb;
+}
+.console-color-white-bg.bright-bg {
+  background-color: #ffffff;
+}
+.console-style-italic {
+  font-style: italic;
+}
+.console-style-underline,
+.console-style-double-underline {
+  text-decoration: underline;
+}
+.console-style-overline {
+  text-decoration: overline;
+}
+@keyframes blink {
+  75% {
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes blink {
+  75% {
+    opacity: 0.0;
+  }
+}
+.console-style-blink-slow {
+  animation: blink 2s step-end infinite;
+  -webkit-animation: blink 2s step-end infinite;
+}
+.console-style-blink-fast {
+  animation: blink 1s step-end infinite;
+  -webkit-animation: blink 1s step-end infinite;
+}
+.console-style-strike,
+.console-style-double-strike {
+  text-decoration: line-through;
+}

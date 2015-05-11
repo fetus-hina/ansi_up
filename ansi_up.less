@@ -1,0 +1,163 @@
+@color-black:           #000;
+@color-red:             #b00;
+@color-green:           #0b0;
+@color-yellow:          #bb0;
+@color-blue:            #00b;
+@color-magenta:         #b0b;
+@color-cyan:            #0bb;
+@color-white:           #bbb;
+@color-bright-black:    #555;
+@color-bright-red:      #f55;
+@color-bright-green:    #5f5;
+@color-bright-yellow:   #ff5;
+@color-bright-blue:     #55f;
+@color-bright-magenta:  #f5f;
+@color-bright-cyan:     #5ff;
+@color-bright-white:    #fff;
+
+.console-color-black-fg {
+  color: @color-black;
+  &.bright-fg {
+    color: @color-bright-black;
+  }
+}
+
+.console-color-black-bg {
+  background-color: @color-black;
+  &.bright-bg {
+    background-color: @color-bright-black;
+  }
+}
+
+.console-color-red-fg {
+  color: @color-red;
+  &.bright-fg {
+    color: @color-bright-red;
+  }
+}
+
+.console-color-red-bg {
+  background-color: @color-red;
+  &.bright-bg {
+    background-color: @color-bright-red;
+  }
+}
+
+.console-color-green-fg {
+  color: @color-green;
+  &.bright-fg {
+    color: @color-bright-green;
+  }
+}
+
+.console-color-green-bg {
+  background-color: @color-green;
+  &.bright-bg {
+    background-color: @color-bright-green;
+  }
+}
+
+.console-color-yellow-fg {
+  color: @color-yellow;
+  &.bright-fg {
+    color: @color-bright-yellow;
+  }
+}
+
+.console-color-yellow-bg {
+  background-color: @color-yellow;
+  &.bright-bg {
+    background-color: @color-bright-yellow;
+  }
+}
+
+.console-color-blue-fg {
+  color: @color-blue;
+  &.bright-fg {
+    color: @color-bright-blue;
+  }
+}
+
+.console-color-blue-bg {
+  background-color: @color-blue;
+  &.bright-bg {
+    background-color: @color-bright-blue;
+  }
+}
+
+.console-color-magenta-fg {
+  color: @color-magenta;
+  &.bright-fg {
+    color: @color-bright-magenta;
+  }
+}
+
+.console-color-magenta-bg {
+  background-color: @color-magenta;
+  &.bright-bg {
+    background-color: @color-bright-magenta;
+  }
+}
+
+.console-color-cyan-fg {
+  color: @color-cyan;
+  &.bright-fg {
+    color: @color-bright-cyan;
+  }
+}
+
+.console-color-cyan-bg {
+  background-color: @color-cyan;
+  &.bright-bg {
+    background-color: @color-bright-cyan;
+  }
+}
+
+.console-color-white-fg {
+  color: @color-white;
+  &.bright-fg {
+    color: @color-bright-white;
+  }
+}
+
+.console-color-white-bg {
+  background-color: @color-white;
+  &.bright-bg {
+    background-color: @color-bright-white;
+  }
+}
+
+.console-style-italic {
+  font-style: italic;
+}
+
+.console-style-underline, .console-style-double-underline {
+  text-decoration: underline;
+}
+
+.console-style-overline {
+  text-decoration: overline;
+}
+
+@keyframes blink {
+  75% { opacity: 0.0; }
+}
+
+@-webkit-keyframes blink {
+  75% { opacity: 0.0; }
+}
+
+.console-style-blink-slow {
+  animation: blink 2s step-end infinite;
+  -webkit-animation: blink 2s step-end infinite;
+}
+
+.console-style-blink-fast {
+  animation: blink 1s step-end infinite;
+  -webkit-animation: blink 1s step-end infinite;
+}
+
+.console-style-strike, .console-style-double-strike {
+  text-decoration: line-through;
+}
+

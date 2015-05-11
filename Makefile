@@ -1,27 +1,14 @@
+all: ansi_up.min.css ansi_up.min.js
 
-SOURCE = lib/*.js
-TESTS = test/*.js
-REPORTER = dot
+ansi_up.min.css: ansi_up.css
+	cleancss -o ansi_up.min.css --rounding-precision=4 -s ansi_up.css
 
-test:
-		@NODE_ENV=test ./node_modules/.bin/mocha \
-				--require should \
-				--reporter $(REPORTER) \
-				$(TESTS)
+ansi_up.css: ansi_up.less
+	lessc -sm=on -su=on ansi_up.less > ansi_up.css.tmp
+	[ ! -e ansi_up.css ] || rm -f ansi_up.css
+	mv ansi_up.css.tmp ansi_up.css
 
-test_verbose:
-		@NODE_ENV=test ./node_modules/.bin/mocha \
-				--require should \
-				--reporter spec \
-				$(TESTS)
+ansi_up.min.js: ansi_up.js
+	uglifyjs ansi_up.js -o ansi_up.min.js -b beautify=false,ascii-only -m -c --comments
 
-lint:
-		./node_modules/.bin/jslint \
-				--white --vars --plusplus --continue ansi2html.js
-		./node_modules/.bin/jslint \
-				--white --vars --plusplus --continue test/ansi2html-test.js
-
-hint:
-		node_modules/.bin/jshint ansi2html.js
-
-.PHONY:	test lint hint
+.PHONY:	all
