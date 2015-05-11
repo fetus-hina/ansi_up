@@ -125,27 +125,26 @@
 
     // Module exports
     ansi_up = {
+        escape_for_html: function (txt) {
+            var a2h = new Ansi_Up();
+            return a2h.escape_for_html(txt);
+        },
 
-      escape_for_html: function (txt) {
-        var a2h = new Ansi_Up();
-        return a2h.escape_for_html(txt);
-      },
+        linkify: function (txt) {
+            var a2h = new Ansi_Up();
+            return a2h.linkify(txt);
+        },
 
-      linkify: function (txt) {
-        var a2h = new Ansi_Up();
-        return a2h.linkify(txt);
-      },
+        ansi_to_html: function (txt, options) {
+            var a2h = new Ansi_Up();
+            return a2h.ansi_to_html(txt, options);
+        },
 
-      ansi_to_html: function (txt, options) {
-        var a2h = new Ansi_Up();
-        return a2h.ansi_to_html(txt, options);
-      },
+        ansi_to_html_obj: function () {
+            return new Ansi_Up();
+        },
 
-      ansi_to_html_obj: function () {
-        return new Ansi_Up();
-      },
-
-      "VERSION": VERSION,
+        "VERSION": VERSION,
     };
 
     // CommonJS module is defined
